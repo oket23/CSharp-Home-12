@@ -36,7 +36,6 @@
             passwordLb = new Label();
             emailLb = new Label();
             passwordTb = new TextBox();
-            SuccessfulLb = new Label();
             passwordCb = new CheckBox();
             label1 = new Label();
             SuspendLayout();
@@ -56,6 +55,8 @@
             // 
             ConfirmButton.BackColor = Color.Indigo;
             ConfirmButton.Cursor = Cursors.Hand;
+            ConfirmButton.FlatAppearance.BorderSize = 0;
+            ConfirmButton.FlatStyle = FlatStyle.Flat;
             ConfirmButton.Font = new Font("Showcard Gothic", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
             ConfirmButton.ForeColor = SystemColors.ControlLight;
             ConfirmButton.Location = new Point(250, 307);
@@ -125,18 +126,6 @@
             passwordTb.Size = new Size(292, 35);
             passwordTb.TabIndex = 3;
             // 
-            // SuccessfulLb
-            // 
-            SuccessfulLb.AutoSize = true;
-            SuccessfulLb.Font = new Font("Segoe UI", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            SuccessfulLb.Location = new Point(513, 294);
-            SuccessfulLb.Name = "SuccessfulLb";
-            SuccessfulLb.Size = new Size(188, 94);
-            SuccessfulLb.TabIndex = 5;
-            SuccessfulLb.Text = "Register\r\nSuccessful";
-            SuccessfulLb.TextAlign = ContentAlignment.TopCenter;
-            SuccessfulLb.Visible = false;
-            // 
             // passwordCb
             // 
             passwordCb.AutoSize = true;
@@ -168,7 +157,6 @@
             ClientSize = new Size(713, 397);
             Controls.Add(label1);
             Controls.Add(passwordCb);
-            Controls.Add(SuccessfulLb);
             Controls.Add(emailLb);
             Controls.Add(passwordLb);
             Controls.Add(dateOfBirthLb);
@@ -180,6 +168,7 @@
             FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
             Name = "Form1";
+            ShowIcon = false;
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             ResumeLayout(false);
@@ -196,7 +185,6 @@
         private Label passwordLb;
         private Label emailLb;
         private TextBox passwordTb;
-        private Label SuccessfulLb;
         private CheckBox passwordCb;
         private Label label1;
     }

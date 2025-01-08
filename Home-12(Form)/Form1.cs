@@ -11,8 +11,13 @@ namespace Home_12_Form_
         {
             if (emailTb.Text != "" && passwordTb.Text != "")
             {
-                SuccessfulLb.Visible = true;
+                MessageBox.Show("Register successful");
             }
+            else
+            {
+                MessageBox.Show("Error");
+            }
+          
         }
 
         private void passwordCb_CheckedChanged(object sender, EventArgs e)
